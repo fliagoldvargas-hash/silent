@@ -8,9 +8,9 @@
   "theme_color": "#ff2366",
   "icons": [
     {
-      "src": "/public/silent-logo.png",
-      "sizes": "1024x1024",
-      "type": "image/png",
+      "src": "/public/logo.svg",
+      "sizes": "96x96",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ]
