@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Silent Protocol Documentation</title>
+    <meta name="description" content="Silent Protocol documentation for private agents, encrypted execution, keys, governance and marketplaces.">
+    <meta property="og:title" content="Silent Protocol Documentation">
+    <meta property="og:description" content="Silent Protocol documentation for private agents, encrypted execution, keys, governance and marketplaces.">
+    <meta property="og:image" content="../public/silent-logo.png">
+    <link rel="icon" href="../public/silent-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="../public/silent-logo.png">
+    <link rel="manifest" href="../public/site.webmanifest">
+    <link rel="stylesheet" href="../src/styles.css">
+  </head>
+  <body class="docs-page">
+    <header class="docs-topbar">
+      <a href="../" class="docs-back">&larr; Back</a>
+      <span class="docs-divider"></span>
+      <span class="docs-wordmark">docs</span>
+      <a class="docs-globe" href="../" aria-label="Silent Protocol site">SP</a>
+    </header>
+
+    <main class="docs-main">
+      <section class="docs-hero reveal">
+        <p class="docs-logo"><img src="../public/silent-logo.png" alt=""> SILENT PROTOCOL</p>
+        <h1>Documentation</h1>
+        <p>Everything you need to understand Silent Protocol is collected on this page: encrypted agent creation, key ownership, execution flows, marketplace privacy, and automated governance.</p>
+      </section>
+
+      <section class="docs-overview reveal" aria-label="Documentation overview">
+        <article>
+          <span>01</span>
+          <h2>Private Agents</h2>
+          <p>How Silent Agents hold strategy logic, execute on EVM networks, and keep intent hidden from public observers.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>Encryption Layer</h2>
+          <p>How user-owned Silent Keys protect configs, portfolio state, and agent decision history.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>Protocol Operations</h2>
+          <p>How wallets, market data, payments, identity, marketplace listings, and governance fit together.</p>
+        </article>
+      </section>
+
+      <section class="docs-section reveal" aria-labelledby="base-title">
+        <h2 id="base-title">BASE</h2>
+        <div class="docs-grid">
+          <article class="doc-card">
+            <span>BASE</span>
+            <strong>Trading on Base & Ethereum</strong>
+            <p>Silent Agents run natively on Base and Ethereum mainnet. Same encrypted strategy, same private execution layer.</p>
+            <small>Jun 4, 2026</small>
+          </article>
+          <article class="doc-card">
+            <span>BASE</span>
+            <strong>Server-Side Agent Wallets</strong>
+            <p>Every Base and Ethereum agent gets a dedicated server-side custodial wallet with encrypted authorization.</p>
+            <small>Jun 4, 2026</small>
+          </article>
+          <article class="doc-card">
+            <span>BASE</span>
+            <strong>EVM Trade Execution</strong>
+            <p>EVM trades route through best-execution quotes across major DEXs while strategy intent stays private.</p>
+            <small>Jun 4, 2026</small>
+          </article>
+          <article class="doc-card">
+            <span>BASE</span>
+            <strong>EVM Market Data & Snapshots</strong>
+            <p>Live price snapshots, OHLCV candles, volume, market cap, and position tracking for every Silent Agent.</p>
+            <small>Jun 4, 2026</small>
+          </article>
+          <article class="doc-card">
+            <span>BASE</span>
+            <strong>ERC-8004 Agent Identity</strong>
+            <p>Optionally register your agent on-chain as an ERC-8004 identity on Base mainnet with verifiable metadata.</p>
+            <small>Jun 4, 2026</small>
+          </article>
+          <article class="doc-card">
+            <span>BASE</span>
+            <strong>x402 Micropayments</strong>
+            <p>Let your agent pay for premium data and API calls per request while keeping execution receipts encrypted.</p>
+            <small>Jun 4, 2026</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="docs-section reveal" aria-labelledby="silent-title">
+        <h2 id="silent-title">SILENT PROTOCOL</h2>
+        <div class="docs-grid">
+          <article class="doc-card">
+            <span>ENCRYPTION</span>
+            <strong>Silent Keys</strong>
+            <p>Generate user-owned keys for decrypting private agent configuration. Silent Protocol never stores the secret.</p>
+            <small>Jun 5, 2026</small>
+          </article>
+          <article class="doc-card">
+            <span>AGENTS</span>
+            <strong>Encrypted Agent Configuration</strong>
+            <p>Define thresholds, strategy rules, risk bounds, and market filters without exposing the underlying logic.</p>
+            <small>Jun 5, 2026</small>
+          </article>
+          <article class="doc-card">
+            <span>MARKETPLACE</span>
+            <strong>Private Agent Marketplace</strong>
+            <p>Publish and monetize agents while keeping creator logic sealed behind Silent Protocol encryption.</p>
+            <small>Jun 5, 2026</small>
+          </article>
+          <article class="doc-card">
+            <span>GOVERNANCE</span>
+            <strong>Automated Governance</strong>
+            <p>Let agents manage upgrades, permissions, and execution policies through private, auditable decisions.</p>
+            <small>Jun 5, 2026</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="docs-article reveal">
+        <p class="eyebrow">[QUICK START]</p>
+        <h2>Build an invisible trading flow</h2>
+        <ol>
+          <li>Create a Silent Agent and assign a dedicated wallet.</li>
+          <li>Generate Silent Keys locally. The secret key remains user-owned.</li>
+          <li>Encrypt strategy configuration before publishing it to the agent.</li>
+          <li>Route execution through the Silent Protocol lane so public observers only see noise.</li>
+        </ol>
+      </section>
+
+      <section class="docs-reference reveal" aria-label="Protocol reference">
+        <div>
+          <p class="eyebrow">[REFERENCE]</p>
+          <h2>Core concepts in one place</h2>
+        </div>
+        <dl>
+          <dt>Silent Agent</dt>
+          <dd>An execution unit that receives encrypted strategy rules and acts without exposing the logic publicly.</dd>
+          <dt>Silent Keys</dt>
+          <dd>User-owned keys used to protect and recover sensitive configuration. The protocol does not store the secret.</dd>
+          <dt>Encrypted Marketplace</dt>
+          <dd>A distribution layer where creators can sell agents while preserving their private algorithmic edge.</dd>
+          <dt>Automated Governance</dt>
+          <dd>Policy controls for agent upgrades, permissions, wallet limits, and execution boundaries.</dd>
+        </dl>
+      </section>
+    </main>
+
+    <script src="../src/main.js"></script>
+  </body>
+</html>

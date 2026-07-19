@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Silent Protocol</title>
+    <meta name="description" content="Private encrypted trading agents for strategies that stay silent.">
+    <meta property="og:title" content="Silent Protocol">
+    <meta property="og:description" content="Private encrypted trading agents for strategies that stay silent.">
+    <meta property="og:image" content="public/silent-logo.png">
+    <link rel="icon" href="public/silent-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="public/silent-logo.png">
+    <link rel="manifest" href="public/site.webmanifest">
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Silent Protocol home">
+        <img class="brand-logo" src="public/silent-logo.png" alt="" width="42" height="42">
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#encryption">Encryption</a>
+        <a href="#shush">Silent</a>
+        <a href="#governance">Governance</a>
+        <a href="documentation/">Docs</a>
+      </nav>
+      <div class="header-actions">
+        <a class="social-button" href="https://x.com/SilentProtocolX" target="_blank" rel="noreferrer" aria-label="Silent Protocol on X">X</a>
+        <a class="social-button social-button-hot" href="#pumpfun-soon" data-env-href="PUMPFUN_URL" target="_blank" rel="noreferrer">Pump.fun</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero framed reveal">
+        <div class="smoke smoke-one"></div>
+        <div class="smoke smoke-two"></div>
+        <p class="eyebrow">INTRODUCING SILENT PROTOCOL™</p>
+        <h1>The market sees everything.<br>We built the blind spot.</h1>
+        <p class="lead">Your strategy never surfaces. Your alpha never leaks.<br>Trade in a whisper. Win in silence.</p>
+        <div class="hero-actions">
+          <button class="ca-button" type="button" data-copy-ca data-env-text="CA_TEXT">CA: SOON</button>
+          <a class="primary-button" href="#encryption">Explore Protocol</a>
+        </div>
+      </section>
+
+      <section class="feature-strip reveal" aria-label="Protocol setup">
+        <article>
+          <span class="mini-icon">◍</span>
+          <h2>Create Agent</h2>
+          <p>Create fully private agents with the Silent feature.</p>
+        </article>
+        <article>
+          <span class="mini-icon">&lt;/&gt;</span>
+          <h2>Generate Silent Keys</h2>
+          <p>Silent secret keys are never saved. Only the user has access.</p>
+        </article>
+        <article>
+          <span class="mini-icon">▣</span>
+          <h2>Strategy</h2>
+          <p>Make your trading strategy, implement it into Silent agents, and never worry about it getting leaked.</p>
+        </article>
+      </section>
+
+      <section id="encryption" class="problem section-grid reveal">
+        <div class="copy">
+          <p class="eyebrow">[THE PROBLEM]</p>
+          <h2>Two traders. Same market.<br><span>One is invisible.</span></h2>
+          <p>Every transaction is visible, making your strategy a target for predatory MEV bots and copy traders.</p>
+          <p>Silent Protocol™ changes the rules of the game.</p>
+          <div class="comparison">
+            <div>
+              <h3>Without Silent</h3>
+              <p>Strategy submitted to public mempool. Bots detect intent. Front run executed. You get a worse fill.</p>
+            </div>
+            <div>
+              <h3>With Silent</h3>
+              <p>Strategy encrypted via Silent Protocol™. Silent Agent executes quietly. Bots see only noise. You get the best fill.</p>
+            </div>
+          </div>
+        </div>
+        <div class="terminal-panel" aria-label="Private trade simulation">
+          <div class="pulse-orbit"></div>
+          <div class="trade-card public">
+            <span>PUBLIC MEMPOOL</span>
+            <strong>Intent exposed</strong>
+            <small>MEV detected • Slippage rising</small>
+          </div>
+          <div class="trade-card private">
+            <span>SILENT LANE</span>
+            <strong>Encrypted route</strong>
+            <small>Execution hidden • Fill protected</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="shush" class="technical reveal">
+        <p class="eyebrow">[Technical Encryption]</p>
+        <h2>Strategy Logic Encryption</h2>
+        <p class="section-lead">Agent configurations with full privacy inside Silent Protocol™.</p>
+
+        <div class="agent-console">
+          <div class="agent-sidebar">
+            <label for="agent-search">Search agent...</label>
+            <div class="search-row">
+              <input id="agent-search" type="search" placeholder="Search agent..." autocomplete="off">
+              <button type="button" data-search>Search</button>
+            </div>
+            <button class="agent-tab active" type="button" data-agent="Price Action">Agent Price Action</button>
+            <button class="agent-tab" type="button" data-agent="Volume">Price Volume Agent</button>
+            <button class="agent-tab" type="button" data-agent="Risk">Agent 3:1 R</button>
+          </div>
+          <div class="code-card">
+            <div class="code-head">
+              <span>Encrypted Decision Engine</span>
+              <small>Code</small>
+            </div>
+            <pre><code><span>1</span> SILENT PIPELINE
+<span>2</span> encryptedInput = SILENT.encrypt(fetchMarketData())
+<span>3</span> encryptedConfig = SILENT.encrypt(agentConfig)
+<span>4</span> encryptedMetrics = SILENT.computeMetrics(encryptedInput)
+<span>5</span> encryptedSignals = SILENT.compare(encryptedMetrics, encryptedConfig.thresholds)
+<span>6</span> encryptedDecision = SILENT.evaluate(encryptedConfig.strategy, encryptedSignals)
+<span>7</span> decision = SILENT.decrypt(encryptedDecision)
+<span>8</span> executeTrade(decision)
+<span>9</span> storeEncryptedHistory(encryptedDecision)
+<span>10</span> sendEncryptedNotification(encryptedDecision)</code></pre>
+          </div>
+        </div>
+
+        <div class="marketplace">
+          <article>
+            <p class="eyebrow">[Private Marketplace]</p>
+            <h3>Encrypted Agent Marketplace</h3>
+            <p>This allows creators to sell their agents without exposing algorithmic logic.</p>
+          </article>
+          <article>
+            <h3>Encrypted Portfolio Storage</h3>
+            <p>Performance remains verifiable but fully private through Silent Protocol™ encryption.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard reveal">
+        <div>
+          <p class="eyebrow">[SILENT DASHBOARD]</p>
+          <h2>Fully Unified & Private.<br>Ownership is Yours.</h2>
+          <p>Track, manage and forecast your trades and positions. Your on-chain life is private.</p>
+        </div>
+        <div class="dashboard-shell">
+          <div class="dash-nav">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="chart-area">
+            <div class="chart-line"></div>
+            <div class="bar b1"></div>
+            <div class="bar b2"></div>
+            <div class="bar b3"></div>
+            <div class="bar b4"></div>
+          </div>
+          <div class="dash-metrics">
+            <span>Hidden PnL</span>
+            <strong>+24.8%</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="governance" class="governance reveal">
+        <div class="agent-ring" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <p class="eyebrow">[AUTOMATED GOVERNANCE]</p>
+        <h2>Agents that govern themselves</h2>
+        <p>Silent™ takes care of your agents, trades, strategies, and operational decisions at the click of a button.</p>
+        <a class="primary-button" href="#home">Ready to frontrun the market?</a>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Silent Protocol™</strong>
+        <p>One protocol. One product. Private execution for invisible strategy.</p>
+      </div>
+      <div class="footer-links">
+        <section>
+          <h2>Product</h2>
+          <a href="#home">Home</a>
+          <a href="#encryption">Encryption</a>
+          <a href="#shush">Silent</a>
+          <a href="#governance">Governance</a>
+        </section>
+        <section>
+          <h2>Resources</h2>
+          <a href="documentation/">Documentation</a>
+        </section>
+        <section>
+          <h2>Social</h2>
+          <a href="https://x.com/SilentProtocolX" target="_blank" rel="noreferrer">Twitter/X</a>
+          <span>LinkedIn - Coming Soon</span>
+          <span>Discord - Coming Soon</span>
+        </section>
+      </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>

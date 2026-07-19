@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Silent Protocol logo</title>
+  <desc id="desc">A dark circular mark with a closed-eye blind spot and hidden magenta route.</desc>
+  <defs>
+    <radialGradient id="surface" cx="32%" cy="24%" r="72%">
+      <stop offset="0" stop-color="#171717"/>
+      <stop offset="0.58" stop-color="#050505"/>
+      <stop offset="1" stop-color="#020202"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="24" y1="68" x2="72" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff2366"/>
+      <stop offset="1" stop-color="#ff7aa5"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="48" cy="48" r="43" fill="url(#surface)" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2"/>
+  <path d="M22 49.5C29.8 37.8 38.4 32 48 32s18.2 5.8 26 17.5" fill="none" stroke="#f5f3f1" stroke-width="7" stroke-linecap="round"/>
+  <path d="M25 58.5c7 5.2 14.7 7.8 23 7.8s16-2.6 23-7.8" fill="none" stroke="#f5f3f1" stroke-width="7" stroke-linecap="round" opacity="0.22"/>
+  <path d="M29 67 67 29" fill="none" stroke="url(#accent)" stroke-width="7" stroke-linecap="round" filter="url(#soft-glow)"/>
+  <circle cx="48" cy="49" r="6.5" fill="#020202" stroke="#f5f3f1" stroke-width="4"/>
+  <path d="M40 57 56 41" fill="none" stroke="#ff2366" stroke-width="4" stroke-linecap="round"/>
+</svg>

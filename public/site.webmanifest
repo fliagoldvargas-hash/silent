@@ -1,0 +1,17 @@
+{
+  "name": "Silent Protocol",
+  "short_name": "Silent",
+  "description": "Private encrypted trading agents for strategies that stay silent.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020202",
+  "theme_color": "#ff2366",
+  "icons": [
+    {
+      "src": "/public/silent-logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
